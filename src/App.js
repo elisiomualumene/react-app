@@ -1,7 +1,9 @@
+import './App.css';
 import HelloWorld from './components/helloWorld'
 import SayMyName from './components/SayMyName'
 import Pessoa from './components/pessoa'
 import List from './components/List'
+import Evento from './components/Evento';
 
 const App = () => {
   return (
@@ -16,7 +18,11 @@ const App = () => {
       profissao='Programador'
       />
 
-      <List  lancamento={1998} nome='ferrar'/>  
+      <List  lancamento={1900} nome='Ferrari'/>
+      <List  lancamento={1900} nome='Audi'/>
+      <List/>  
+
+      <Evento/>
     </div>
   );
 }

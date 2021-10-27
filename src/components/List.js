@@ -1,24 +1,27 @@
-import PropType from 'prop-types'
+import PropTypes from 'prop-types'
 
 function List({nome, lancamento}){
     return(
-        <>
-        <p>Minha Lista</p>
-
+        <>  
         <ul>
-            <li>Lista 1 {nome}, {lancamento}</li>
-            <li>Lista 2 {nome}, {lancamento}</li>
-            <li>Lista 3 {nome}, {lancamento}</li>
+            <li>Lista {nome}, {lancamento}</li>
         </ul>
         </>
 
-
+        /*
+        Comentarios apenas funcionam fora de fragmentos
+        */
     );
 }
 
-List.prototype = {
-    nome: PropType.string.isRequired,
-    lancamento: PropType.number,
+List.prototypes = {
+    nome: PropTypes.string.isRequired,
+    lancamento: PropTypes.number.isRequired
+}
+
+List.defaultProps = {
+    nome: 'Faltou o nome',
+    lancamento: 0,
 }
 
 export default List
