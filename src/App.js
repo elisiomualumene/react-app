@@ -1,9 +1,9 @@
-import './App.css';
-import HelloWorld from './components/helloWorld';
-import SayMyName from './components/SayMyName';
-import Pessoa from './components/pessoa';
+import HelloWorld from './components/helloWorld'
+import SayMyName from './components/SayMyName'
+import Pessoa from './components/pessoa'
+import List from './components/List'
 
-function App() {
+const App = () => {
   return (
     <div className='app'>
       <HelloWorld/>
@@ -15,6 +15,8 @@ function App() {
       idade='28'
       profissao='Programador'
       />
+
+      <List  lancamento={1998} nome='ferrar'/>  
     </div>
   );
 }
