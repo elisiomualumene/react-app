@@ -10,6 +10,8 @@ function List({nome, lancamento}){
 
         /*
         Comentarios apenas funcionam fora de fragmentos
+
+        {pros} {props.name}
         */
     );
 }

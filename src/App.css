@@ -1,10 +1,10 @@
 h1 {
-  color: #fff;
+  color: #000000;
 }
 
 *{
   text-align: center;
-  color: #fff;
+  color: #000000;
   font-family: sans-serif;
 }
 
@@ -21,4 +21,14 @@ p{
 
 ul li{
   list-style: none;
+}
+
+input{
+  color: black;
+  border: none;
+  height: 30px;
+  width: 250px;
+  margin: 1rem;
+  border-radius: 20px;
+  outline: none;
 }
