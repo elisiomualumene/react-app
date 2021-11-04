@@ -1,0 +1,29 @@
+ul li{
+    display:inline;
+    margin-left: 1rem;
+  }
+  
+  .Link2{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+  }
+  
+  .Link2:hover{
+    color: #c0c0c0;
+    transition: 0.4s;
+  }
+
+  h1 {
+    color: #000000;
+  }
+  
+  p{
+    font-size: 20px;
+  }
+  
+  ul li{
+    list-style: none;
+  }
