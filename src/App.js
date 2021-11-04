@@ -1,6 +1,6 @@
 import './App.css';
-import SeuNome from './components/SeuNome';
-/*import HelloWorld from './components/helloWorld'
+/*import SeuNome from './components/SeuNome';
+import HelloWorld from './components/helloWorld'
 import SayMyName from './components/SayMyName'
 import Pessoa from './components/pessoa'
 import List from './components/List'
@@ -17,33 +17,22 @@ import Saudacao from './components/Saudacao';
 import Home from './Pages/Home';
 import Empresa from './Pages/Empresa';
 import Contato from './Pages/Contato';
+import NavBar from './components/NavBar';
 
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Footer from './components/Footer';
 
 const App = () => {
   
   return(
     <Router>
-      <ul className='app'>
-      <li>
-        <Link to="/">Home</Link>
-        </li>
-
-        
-      <li>
-        <Link to="/">Empresa</Link>
-        </li>
-
-        
-      <li>
-        <Link to="/">Contato</Link>
-        </li>
-      </ul>
+      <NavBar/>
       <Switch>
-      <Route path="/"><Home/></Route>
+      <Route exact path="/"><Home/></Route>
       <Route path="/Empresa"><Empresa/></Route>
       <Route path="/Contato"><Contato/></Route>
       </Switch>
+      <Footer/>
     </Router>
   );
 }
